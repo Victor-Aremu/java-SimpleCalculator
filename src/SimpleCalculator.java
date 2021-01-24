@@ -1,31 +1,27 @@
 public class SimpleCalculator {
-    double firstNumber;
-    double secondNumber;
-    public double getFirstNumber() {
-        return firstNumber;
-    }
+     double firstNumber;
+     double secondNumber;
+
     public void setFirstNumber(double firstNumber) {
         this.firstNumber = firstNumber;
-    }
-    public double getSecondNumber() {
-        return secondNumber;
     }
     public void setSecondNumber(double secondNumber) {
         this.secondNumber = secondNumber;
     }
     public double getAdditionResult() {
-        return getFirstNumber() + getSecondNumber();
+        return this.firstNumber + this.secondNumber;
     }
     public double getSubtractionResult() {
-        return getFirstNumber() - getSecondNumber();
+        return this.firstNumber - this.secondNumber;
     }
     public double getMultiplicationResult(){
-        return getFirstNumber() * getSecondNumber();
+        return this.firstNumber * this.secondNumber;
     }
     public double getDivisionResult() {
-        if (getSecondNumber() == 0){
+        if (this.secondNumber == 0){
             return 0;
         }
-        return getFirstNumber() / getSecondNumber();
+        return this.firstNumber / this.secondNumber;
     }
 }
+//Victor.Aremu
